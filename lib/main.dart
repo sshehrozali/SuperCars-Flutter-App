@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 
-// Components
-import 'screens/TextSection.dart';
-import 'screens/ImageSection.dart';
+// Style
+import 'style.dart';
+
+// Screens
+import 'screens/app.dart';
 
 void main() {
   runApp(const MyApp());
@@ -19,24 +21,18 @@ class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: Scaffold(
-          appBar: AppBar(
-            centerTitle: true,
-            backgroundColor: Colors.purple,
-            title: const Text(
-              'Car Wallpapers',
-              style: TextStyle(fontWeight: FontWeight.normal),
-            ),
-          ),
-          body: Column(
-            mainAxisAlignment: MainAxisAlignment.start,
-            crossAxisAlignment: CrossAxisAlignment.stretch,
-            children: [
-              ImageBanner("assets/images/car1.jpg"),
-              ImageBanner("assets/images/car2.jpg"),
-              ImageBanner("assets/images/car3.jpg"),
-            ],
-          )),
+      home: App(),
+
+
+
+      // TO LEARN
+      // theme: ThemeData(
+      //   textTheme:
+      //       TextTheme(titleLarge: TitleTextStyle, bodyText1: Body1TextStyle),
+      // ),
+
+
+
     );
   }
 }
