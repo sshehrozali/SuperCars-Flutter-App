@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
-import 'dart:math';
+
+// Components
+import 'screens/TextSection.dart';
+import 'screens/ImageSection.dart';
 
 void main() {
   runApp(const MyApp());
@@ -18,28 +21,20 @@ class _MyAppState extends State<MyApp> {
     return MaterialApp(
       home: Scaffold(
           appBar: AppBar(
+            centerTitle: true,
             backgroundColor: Colors.purple,
             title: const Text(
-              'Lets Play with Layouts!',
+              'Car Wallpapers',
               style: TextStyle(fontWeight: FontWeight.normal),
             ),
           ),
           body: Column(
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            mainAxisAlignment: MainAxisAlignment.start,
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
-              Container(
-                child: Text("Red"),
-                decoration: BoxDecoration(color: Colors.red),
-              ),
-              Container(
-                child: Text("Green"),
-                decoration: BoxDecoration(color: Colors.green),
-              ),
-              Container(
-                child: Text("Blue"),
-                decoration: BoxDecoration(color: Colors.blue),
-              ),
+              ImageBanner("assets/images/car1.jpg"),
+              ImageBanner("assets/images/car2.jpg"),
+              ImageBanner("assets/images/car3.jpg"),
             ],
           )),
     );
