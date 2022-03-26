@@ -4,11 +4,10 @@ import 'package:flutter/material.dart';
 import '../../././style.dart';
 
 class CarDetails extends StatelessWidget {
-  final String _title;
   final String _specifications;
   final String _summary;
 
-  CarDetails(this._title, this._specifications, this._summary);
+  CarDetails(this._specifications, this._summary);
 
   @override
   Widget build(BuildContext context) {
@@ -16,10 +15,6 @@ class CarDetails extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.start,
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Container(
-          padding: const EdgeInsets.fromLTRB(16, 32.0, 16, 5.0),
-          child: Text(_title, style: TitleTextStyle),
-        ),
         Container(
           padding: const EdgeInsets.fromLTRB(16, 15.0, 16, 5.0),
           child: Text(_specifications, style: SpecTextStyle),

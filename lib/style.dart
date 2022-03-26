@@ -11,7 +11,7 @@ const TitleTextStyle = TextStyle(
 const SpecTextStyle = TextStyle(
   fontFamily: DefaultFont,
   fontSize: 22.0,
-  fontWeight: FontWeight.w400
+  fontWeight: FontWeight.w700
 );
 
 const SummaryTextStyle = TextStyle(
