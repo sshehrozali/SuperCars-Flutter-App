@@ -1,6 +1,6 @@
-# colorsland
+# Super Cars App (Flutter) ⚡
 
-A new Flutter project.
+Now you can freely discover and browse your Favourite Super Cars ❤. Speed! 🏁
 
 ## Getting Started
 
