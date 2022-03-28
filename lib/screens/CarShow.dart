@@ -7,11 +7,13 @@ import 'ImageSection.dart';
 // Models
 import '../models/Car.dart';
 
-class App extends StatelessWidget {
+class CarShow extends StatelessWidget {
+  final int _carID;
+  CarShow(this._carID);
+
   @override
   Widget build(BuildContext context) {
-    final cars = Car.fetchAll(); // Get All Cars
-    final car = cars.first; // Get First Car from the list
+    final car = Car.fetchbyID(_carID); // Get Car by ID
 
     return Scaffold(
         appBar: AppBar(

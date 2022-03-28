@@ -4,7 +4,8 @@ import 'package:flutter/material.dart';
 import 'style.dart';
 
 // Screens
-import 'screens/app.dart';
+import 'screens/CarsList/CarsList.dart';
+import 'screens/CarShow.dart';
 
 void main() {
   runApp(const MyApp());
@@ -21,18 +22,13 @@ class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: App(),
-
-
+      home: CarsList(),
 
       // TO LEARN
       // theme: ThemeData(
       //   textTheme:
       //       TextTheme(titleLarge: TitleTextStyle, bodyText1: Body1TextStyle),
       // ),
-
-
-
     );
   }
 }
